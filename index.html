@@ -13,22 +13,34 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 </head>
 <body>
 
-<!-- Navigation -->
 
+
+<!-- Navigation -->
 <nav class="navbar">
-    
+
     <div class="logo">
         <a href="index.html">
             <img src="./imgs/logo1.jpg" alt="Website Solution Logo">
         </a>
     </div>
 
-<a href="#about">About</a>
-<a href="#belief">What I Believe</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
+    <!-- Hamburger icon -->
+
+    <div class="menu-icon">
+        <i id="menbar" class="fa-solid fa-bars"></i>
+    </div>
+
+    <!-- Menu links -->
+     
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#belief">What I Believe</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+
 </nav>
 
 <!-- Header -->
@@ -311,6 +323,18 @@ mwaemile@gmail.com
 </p>
 
 </footer>
+<script>
 
+const menuIcon = document.querySelector(".menu-icon");
+const navLinks = document.querySelector(".nav-links");
+
+menuIcon.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+</script>
 </body>
+<script>
+    console.log("Hello email")
+</script>
 </html>

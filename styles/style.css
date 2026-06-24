@@ -56,6 +56,29 @@ nav a:hover{
     color:#0d6efd;
 }
 
+.navbar{
+    background:#111827;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+.inner-na{
+
+}
+
+.menu-icon{
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+    display:none;
+}
 /* Header */
 
 header{
@@ -333,7 +356,7 @@ footer{
 
     .logo{
         width:100%;
-        text-align:center;
+        text-align:start;
         margin-right:0;
     }
 
@@ -379,12 +402,45 @@ footer{
         text-align:center;
     }
 }
+@media (max-width:768px){
+
+    .menu-icon{
+        display:block;
+    }
+
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background:#111827;
+        flex-direction:column;
+    }
+
+    .nav-links a{
+        display:block;
+        padding:15px;
+        text-align:center;
+        border-top:1px solid gray;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+}
 
 
 /* Smartphones */
 @media (max-width:480px){
-
+ #menbar{
+ position: absolute;
+ right: 20px;
+ top: 20px;
+ }
     .navbar{
+        position: relative;
         flex-direction:column;
         gap:12px;
     }
