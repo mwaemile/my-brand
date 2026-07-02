@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Emile Nshutininka</title>
 
-<link rel="icon" type="image/png" href="/web-app-manifest-512x512.png" sizes="96x96">
+<link rel="icon" type="image/png" href="imgs/logo1.jpg">
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -24,6 +24,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         </a>
     </div>
 
+
     <!-- Hamburger icon -->
 
     <div class="menu-icon">
@@ -39,6 +40,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         <a href="#projects">Projects</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
+        <a href="./dashboard/admin.html">login</a>
     </div>
 
 </nav>
@@ -316,25 +318,66 @@ mwaemile@gmail.com
 
 </section>
 
+<!-- Newsletter -->
+
+<section id="newsletter">
+
+    <div class="container">
+
+        <h2>Subscribe to My Newsletter</h2>
+
+        <p>
+            Get updates about my latest projects, web development tips,
+            digital marketing insights, and business opportunities.
+        </p>
+
+        <form id="contactForm">
+
+    <input
+        type="text"
+        id="nameInput"
+        placeholder="Enter your name"
+        required
+    >
+
+    <input
+        type="email"
+        id="emailInput"
+        placeholder="Enter your email"
+        required
+    >
+
+    <textarea
+        id="messageInput"
+        placeholder="Write your message"
+        rows="5"
+        required
+    ></textarea>
+
+    <button type="submit" class="btn">
+        Send Message
+    </button>
+
+</form>
+
+<p id="message"></p>
+
+    </div>
+
+</section>
+
 <footer>
 
 <p>
-© 2026 Emile Nshutinka Mwami | All Rights Reserved
+© 2026 Emile Mwami | All Rights Reserved
 </p>
 
 </footer>
-<script>
-
-const menuIcon = document.querySelector(".menu-icon");
-const navLinks = document.querySelector(".nav-links");
-
-menuIcon.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-});
-
-</script>
 </body>
-<script>
-    console.log("Hello email")
-</script>
+<script src="script/script.js"></script>
+</body>
 </html>
+</html>
+
+
+

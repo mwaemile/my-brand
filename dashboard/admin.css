@@ -1,0 +1,273 @@
+/* ========== GOOGLE FONT ========== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ========== RESET ========== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fc;
+    display:flex;
+    min-height:100vh;
+    color:#333;
+}
+
+/* ========== SIDEBAR ========== */
+
+.sidebar{
+    width:260px;
+    background:#111827;
+    color:#fff;
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    padding:30px 20px;
+    overflow-y:auto;
+}
+
+.sidebar h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:28px;
+    letter-spacing:1px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    margin-bottom:10px;
+}
+
+.sidebar ul li a{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    text-decoration:none;
+    color:#fff;
+    padding:14px 18px;
+    border-radius:10px;
+    transition:.3s;
+    font-size:16px;
+}
+
+.sidebar ul li a:hover{
+    background:#2563eb;
+    transform:translateX(5px);
+}
+
+.sidebar i{
+    width:22px;
+    text-align:center;
+}
+
+/* ========== MAIN CONTENT ========== */
+
+.main{
+    margin-left:260px;
+    width:calc(100% - 260px);
+    padding:35px;
+}
+
+/* ========== HEADER ========== */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+}
+
+header h1{
+    font-size:32px;
+    color:#111827;
+}
+
+.admin{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.admin img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #2563eb;
+}
+
+.admin span{
+    font-weight:600;
+    font-size:16px;
+}
+
+/* ========== CARDS ========== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-bottom:40px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card i{
+    font-size:45px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.card h2{
+    font-size:34px;
+    margin-bottom:10px;
+    color:#111827;
+}
+
+.card p{
+    color:#666;
+}
+
+/* ========== TABLES ========== */
+
+.tables{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+    gap:30px;
+}
+
+.table-box{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.table-box h2{
+    margin-bottom:20px;
+    color:#111827;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th{
+    background:#2563eb;
+    color:#fff;
+    padding:14px;
+    text-align:left;
+}
+
+table td{
+    padding:14px;
+    border-bottom:1px solid #eee;
+}
+
+table tr:hover{
+    background:#f7f9fc;
+}
+
+/* ========== SCROLLBAR ========== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2563eb;
+    border-radius:20px;
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media(max-width:992px){
+
+.sidebar{
+    width:220px;
+}
+
+.main{
+    margin-left:220px;
+    width:calc(100% - 220px);
+}
+
+}
+
+@media(max-width:768px){
+
+body{
+    flex-direction:column;
+}
+
+.sidebar{
+    position:relative;
+    width:100%;
+    height:auto;
+}
+
+.main{
+    margin-left:0;
+    width:100%;
+    padding:20px;
+}
+
+header{
+    flex-direction:column;
+    gap:20px;
+    text-align:center;
+}
+
+.tables{
+    grid-template-columns:1fr;
+}
+
+.table-box{
+    overflow-x:auto;
+}
+
+table{
+    min-width:500px;
+}
+
+}
+
+@media(max-width:480px){
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+header h1{
+    font-size:26px;
+}
+
+.sidebar h2{
+    font-size:24px;
+}
+
+}

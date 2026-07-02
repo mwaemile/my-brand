@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard | E. Website Solution</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>EWS Admin</h2>
+
+<ul>
+
+<li><a href="#"><i class="fa fa-chart-line"></i> Dashboard</a></li>
+
+<li><a href="#"><i class="fa fa-users"></i> Subscribers</a></li>
+
+<li><a href="#"><i class="fa fa-envelope"></i> Messages</a></li>
+
+<li><a href="#"><i class="fa fa-folder"></i> Projects</a></li>
+
+<li><a href="#"><i class="fa fa-briefcase"></i> Services</a></li>
+
+<li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+
+<li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
+
+<li><a href="../index.html"><i class="fa fa-right-from-bracket"></i> Logout</a></li>
+
+</ul>
+
+</div>
+
+<div class="main">
+
+<header>
+
+<h1>Dashboard</h1>
+
+<div class="admin">
+
+<img src="../imgs/emile.jpg">
+
+<span>Emile Mwami</span>
+
+</div>
+
+</header>
+
+<div class="cards">
+
+<div class="card">
+<i class="fa fa-users"></i>
+<h2 id="subscriberCount">0</h2>
+<p>Subscribers</p>
+</div>
+
+<div class="card">
+<i class="fa fa-envelope"></i>
+<h2 id="messageCount">0</h2>
+<p>Messages</p>
+</div>
+
+<div class="card">
+<i class="fa fa-folder"></i>
+<h2 id="projectCount"></h2>
+<p>Projects</p>
+</div>
+
+<div class="card">
+<i class="fa fa-eye"></i>
+<h2 id="visitorCount"></h2>
+<p>Visitors</p>
+</div>
+
+</div>
+
+<div class="tables">
+
+    <!-- =========================
+         SUBSCRIBERS TABLE
+    ========================== -->
+    <div class="table-box">
+
+        <h2>Recent Subscribers</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+
+            <tbody id="subscriberTable">
+                <!-- JS will insert rows here -->
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <!-- =========================
+         MESSAGES TABLE
+    ========================== -->
+    <div class="table-box">
+
+        <h2>Latest Messages</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Subject</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody id="messageTable">
+                <!-- JS will insert rows here -->
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+<script src="admin.js"></script>
+</body>
+
+</html>
