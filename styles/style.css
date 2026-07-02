@@ -333,6 +333,178 @@ display: flex;
     transform:translateY(-8px);
 }
 
+/* ===========================
+   Newsletter Section
+=========================== */
+
+#newsletter{
+    padding:80px 20px;
+    background:linear-gradient(135deg,#f4f7fb,#eef5ff);
+}
+
+#newsletter .container{
+    max-width:700px;
+    margin:auto;
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.12);
+}
+
+#newsletter h2{
+    text-align:center;
+    font-size:2.2rem;
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+#newsletter p{
+    text-align:center;
+    color:#666;
+    font-size:16px;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+/* Form */
+
+#contactForm{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+/* Labels */
+
+#contactForm label{
+    font-size:15px;
+    font-weight:600;
+    color:#333;
+    margin-bottom:-12px;
+}
+
+/* Inputs */
+
+#contactForm input,
+#contactForm textarea{
+    width:100%;
+    padding:15px 18px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    font-family:inherit;
+    outline:none;
+    transition:.3s ease;
+    background:#fafafa;
+}
+
+#contactForm textarea{
+    resize:vertical;
+    min-height:150px;
+}
+
+/* Focus Effect */
+
+#contactForm input:focus,
+#contactForm textarea:focus{
+    border-color:#0d6efd;
+    background:#fff;
+    box-shadow:0 0 8px rgba(13,110,253,.25);
+}
+
+/* Placeholder */
+
+#contactForm input::placeholder,
+#contactForm textarea::placeholder{
+    color:#999;
+}
+
+/* Button */
+
+#contactForm .btn{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    padding:15px;
+    background:#0d6efd;
+    color:#fff;
+    font-size:17px;
+    font-weight:600;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s ease;
+}
+
+#contactForm .btn:hover{
+    background:#084fc7;
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(13,110,253,.35);
+}
+
+#contactForm .btn:active{
+    transform:scale(.98);
+}
+
+/* Success Message */
+
+#message{
+    margin-top:20px;
+    text-align:center;
+    font-weight:600;
+    color:#28a745;
+}
+
+/* Error Message */
+
+#message.error{
+    color:#dc3545;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    #newsletter{
+        padding:60px 15px;
+    }
+
+    #newsletter .container{
+        padding:30px 25px;
+    }
+
+    #newsletter h2{
+        font-size:1.8rem;
+    }
+
+    #newsletter p{
+        font-size:15px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    #newsletter .container{
+        padding:25px 18px;
+    }
+
+    #newsletter h2{
+        font-size:1.5rem;
+    }
+
+    #contactForm input,
+    #contactForm textarea{
+        font-size:15px;
+        padding:13px 15px;
+    }
+
+    #contactForm .btn{
+        width:100%;
+    }
+
+}
 /* Footer */
 
 footer{
