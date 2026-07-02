@@ -1,0 +1,218 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:30px;
+}
+
+/* ===========================
+   MAIN CONTAINER
+=========================== */
+
+.signup-container{
+    width:100%;
+    max-width:1000px;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    display:flex;
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+}
+
+/* ===========================
+   LEFT SIDE
+=========================== */
+
+.left{
+    flex:1;
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:50px;
+}
+
+.left h1{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.left p{
+    font-size:16px;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.left img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid rgba(255,255,255,.3);
+}
+
+/* ===========================
+   RIGHT SIDE
+=========================== */
+
+.right{
+    flex:1;
+    padding:50px;
+}
+
+.right h2{
+    text-align:center;
+    color:#1e293b;
+    margin-bottom:35px;
+    font-size:32px;
+}
+
+/* ===========================
+   INPUT BOXES
+=========================== */
+
+.input-box{
+    position:relative;
+    margin-bottom:22px;
+}
+
+.input-box i{
+    position:absolute;
+    left:15px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#2563eb;
+    font-size:18px;
+}
+
+.input-box input{
+    width:100%;
+    padding:15px 15px 15px 50px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+.input-box input:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 10px rgba(37,99,235,.25);
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:#fff;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+/* ===========================
+   LOGIN LINK
+=========================== */
+
+.login-link{
+    margin-top:25px;
+    text-align:center;
+    font-size:15px;
+}
+
+.login-link a{
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.login-link a:hover{
+    text-decoration:underline;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.signup-container{
+    flex-direction:column;
+}
+
+.left{
+    padding:40px 25px;
+}
+
+.left h1{
+    font-size:30px;
+}
+
+.left img{
+    width:140px;
+    height:140px;
+}
+
+.right{
+    padding:35px 25px;
+}
+
+}
+
+@media(max-width:500px){
+
+body{
+    padding:15px;
+}
+
+.left h1{
+    font-size:26px;
+}
+
+.left p{
+    font-size:14px;
+}
+
+.right h2{
+    font-size:26px;
+}
+
+.input-box input{
+    padding:13px 13px 13px 45px;
+}
+
+button{
+    padding:13px;
+    font-size:16px;
+}
+
+}
