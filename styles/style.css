@@ -228,6 +228,12 @@ display: flex;
     color:white;
 }
 
+.blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Projects */
 
 .projects{
