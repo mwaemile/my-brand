@@ -1,10 +1,10 @@
-# 🌐 My Portfolio Website
+#  My Portfolio Website
 
 Welcome to my personal portfolio website!
 
 This website showcases my skills, projects, and experience as a web developer.
 
-## 📌 Features
+##  Features
 
 - Responsive Design
 - Home Page
@@ -17,14 +17,14 @@ This website showcases my skills, projects, and experience as a web developer.
 - Admin Dashboard
 - Login System
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
 - Git & GitHub
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 portfolio/
@@ -46,7 +46,7 @@ portfolio/
 └── README.md
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 1. Clone the repository.
 
@@ -58,16 +58,16 @@ git clone https://github.com/your-username/portfolio.git
 
 3. Open `index.html` in your browser.
 
-## 📸 Screenshots
+##  Screenshots
 
 You can add screenshots of your website here.
 
-## 📧 Contact
+##  Contact
 
-Email: your-email@example.com
+Email: mwaemile@gmail.com
 
-GitHub: https://github.com/your-username
+GitHub: https://github.com/mwaemile
 
-## 📄 License
+##  License
 
 This project is open source and available under the MIT License.
